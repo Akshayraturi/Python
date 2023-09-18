@@ -1,0 +1,158 @@
+class Vehicle:
+        def __init__(self):
+                self.driver=1
+                self.engine=1
+        def type(self,vehicle):
+                     print("**The type of vehicle is ",vehicle,"**") 
+        def car(self,tyre,category,brand,colour):
+                print("**The car has:",tyre,"tyre")
+                print("**The car is of: ",brand,"brand")
+                print("**The car's colour is:",colour)
+                print("**The car has:",category,"type")
+        def cycle(self,tyre,category,brand,colour):
+                print("**The cycle has:",tyre,"tyre")
+                print("**The cycle is of: ",brand,"brand")
+                print("**The cycle has:",category,"type")
+                print("**The cycle's colour is:",colour)
+        def boat(self,tyre,category,brand,colour):
+                print("**The boat has:",tyre,"tyre")
+                print("**The boat is of: ",brand,"brand")
+                print("**The boat has:",category,"type")
+                print("**The boat colour is:",colour)
+        def aeroplane(self,tyre,category,brand,colour):
+                print("**The aeroplane has:",tyre,"tyre")
+                print("**The aeroplane  is of: ",brand,"brand")
+                print("**The aeroplane  has:",category,"type")
+                print("**The aeroplane  colour is:",colour)
+                  
+        def method(self):
+                print("**The vehicle has ",self.driver,"driver**")
+                print("**The vehicle has ",self.engine,"engine**")
+     
+                          
+obj=Vehicle()
+obj.type("car")
+car=Vehicle()
+car.car(4,"land",str(input("enter the brand of the car")),str(input("enter the colour of the car")))
+obj.method()
+cycle=Vehicle()
+cycle.cycle(2,"land",str(input("enter the brand of the cycle")),str(input("enter the colour of the cycle")))
+obj.method()
+boat=Vehicle()
+boat.boat(2,"water",str(input("enter the brand of the  boat")),str(input("enter the colour boat")))
+obj.method()
+aeroplane=Vehicle()
+aeroplane.aeroplane(2,"air",str(input("enter the brand of aeroplane")),str(input("enter the colour aeroplane")))
+obj.method()
+************************************
+class Person:
+        def __init__(self):
+                pass
+        def myname(self,name):
+                print("My name is:",name)
+        def my_address(self,address):
+                print("My address is: ",address)
+        def my_aadhar(self,aadhar):
+                print("My aaharcard number is: ",aadhar)
+        def mobile(self,number):
+                print("My phone number is: ",number)
+
+        
+class Employee(Person):
+        
+        def __init____(self):
+                pass
+        def salary(self,salary):
+                print("My salary is: ",salary)
+        def id(self,id):
+                print("My id is: ",id)
+        def post(self,post):
+                        print("I am :",post,"in the organization")
+akshay=Employee()
+akshay.myname("akshay")
+akshay.my_address("rishikesh,uttarakhand")
+akshay.my_aadhar(6456565645646)
+akshay.mobile(995342244)
+akshay.salary(100000)
+akshay.post("IAS")
+akshay.id("admin@453")
+************************************************************************************************
+def fun(n):
+    return(n-200)
+list=[134,54,5,5,56,6,345,66]
+list.sort(key = fun)
+print(list)
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+mylist=[7,8,2,6,9,1,10,3]
+print(mylist[::-1])
+******************************************************************************************
+op=str(input("enter the operator"))
+a=float(input("enter the first number"))
+b=float(input("enter the second number"))
+if op=="+":
+  print(a,"+",b,"=",a+b)
+  if op=="-":
+    print(a,"-",b,"=",a-b)
+    if op=="*":
+      print(a,"*",b,"=",a*b)
+      if op=="/":
+        print(a,"/",b,"=",a/b)
+--------------------------------------------------------------------------------------------
+mydict={
+"name":"arun",
+"age":15,
+"address":
+{
+  "permanent":"rishikesh",
+  "current":"delhi",
+}}
+vehicle=["car","truck","bike","cycle"]
+
+print(mydict["address"]["current"])
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+mydict={
+"name":"arun",
+"age":15,
+"address":{
+ "permanent":"rishikesh",
+  "current":"delhi",
+},
+"vehicle":["car","truck","bike","cycle"]
+}
+
+print(mydict["vehicle"][2])
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+mydict={
+"name":"arun",
+"age":15,
+"address":{
+ "permanent":"rishikesh",
+  "current":"delhi",
+},
+"vehicle":["car","truck","bike","cycle"]
+}
+
+mydict["age"]=19
+x=mydict.values()
+print(x)
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+tuple=("akshay","naitik","raghav")
+l=list(tuple)
+l[2]="shubham"
+tuple=list(l)
+print(tuple)
++++++++++++++++++
+class Person:
+    def __init__(self):
+        pass
+    def sum(self,a,b):
+        print("The sum of these numbers are",a+b)
+    def subtract(self,a,b):
+        print("The subtraction of these numbers are",a-b)
+    def divide(self,a,b):
+        print("The subtraction of these numbers are",a-b) 
+    
+obj=Person()
+obj2=Person()
+obj.car(str(input("enter the car's brand")))
+obj.myname("akshay")

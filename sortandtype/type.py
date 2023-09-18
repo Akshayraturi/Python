@@ -1,0 +1,10 @@
+a="akshay"
+b=2
+c=3.2
+d=True
+e=False
+print(type(a))
+print(type(b))
+print(type(c))
+print(type(d))
+print(type(e))
