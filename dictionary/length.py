@@ -2,7 +2,7 @@ dict={
     "fruit":"mango",
     "vegetable":"potato",
     "name":"akshay",
-    "name":"akshay"
+    "name":"akshay",
 
 }
 print(len(dict))
